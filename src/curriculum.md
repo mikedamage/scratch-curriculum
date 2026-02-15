@@ -14,18 +14,28 @@ This is designed around how he learns: **see it working → take it apart → un
 
 ---
 
-## Units
+## Lessons
 
-| Unit | Core Concept | Project | File |
-|------|-------------|---------|------|
-| 1 | Sequences, Events | Sound board, sprite skit | [unit-1-sequences-and-events.md](unit-1-sequences-and-events.md) |
-| 2 | Loops, Parameters | Spirograph machine | [unit-2-loops-and-generative-art.md](unit-2-loops-and-generative-art.md) |
-| 3 | Conditionals | Maze game, treasure hunt | [unit-3-conditionals.md](unit-3-conditionals.md) |
-| 4 | Variables, Game state | Catch game with lives/score | [unit-4-variables-and-game-state.md](unit-4-variables-and-game-state.md) |
-| 5 | Broadcasting | Space shooter with levels | [unit-5-messaging.md](unit-5-messaging.md) |
-| 6 | Cloning | Space Invaders | [unit-6-cloning.md](unit-6-cloning.md) |
-| 7 | Abstraction | Refactored game + reusable blocks | [unit-7-abstraction.md](unit-7-abstraction.md) |
-| 8 | Everything | His own game | [unit-8-capstone.md](unit-8-capstone.md) |
+| Unit | Session | Title | File |
+|------|---------|-------|------|
+| 1 | 1.1 | The Bossy Robot | [1.1-the-bossy-robot.md](1.1-the-bossy-robot.md) |
+| 1 | 1.2 | Event Mashup | [1.2-event-mashup.md](1.2-event-mashup.md) |
+| 2 | 2.1 | Bouncing Without Exhaustion | [2.1-bouncing-without-exhaustion.md](2.1-bouncing-without-exhaustion.md) |
+| 2 | 2.2 | Spirograph Machine | [2.2-spirograph-machine.md](2.2-spirograph-machine.md) |
+| 2 | 2.3 | Nested Loops | [2.3-nested-loops.md](2.3-nested-loops.md) |
+| 3 | 3.1 | The Floor Is Lava | [3.1-the-floor-is-lava.md](3.1-the-floor-is-lava.md) |
+| 3 | 3.2 | Hot & Cold | [3.2-hot-and-cold.md](3.2-hot-and-cold.md) |
+| 4 | 4.1 | What's the Score? | [4.1-whats-the-score.md](4.1-whats-the-score.md) |
+| 4 | 4.2 | Catch Game | [4.2-catch-game.md](4.2-catch-game.md) |
+| 4 | 4.3 | Difficulty Ramp | [4.3-difficulty-ramp.md](4.3-difficulty-ramp.md) |
+| 5 | 5.1 | Boss Battle | [5.1-boss-battle.md](5.1-boss-battle.md) |
+| 5 | 5.2 | Level Transitions | [5.2-level-transitions.md](5.2-level-transitions.md) |
+| 6 | 6.1 | Rain Machine | [6.1-rain-machine.md](6.1-rain-machine.md) |
+| 6 | 6.2 | Space Invaders | [6.2-space-invaders.md](6.2-space-invaders.md) |
+| 7 | 7.1 | The Messy Code Problem | [7.1-the-messy-code-problem.md](7.1-the-messy-code-problem.md) |
+| 7 | 7.2 | Blocks with Inputs | [7.2-blocks-with-inputs.md](7.2-blocks-with-inputs.md) |
+| 8 | 8.1 | Design Doc | [8.1-design-doc.md](8.1-design-doc.md) |
+| 8 | 8.2 | Build Sprint | [8.2-build-sprint.md](8.2-build-sprint.md) |
 
 ---
 
