@@ -1,5 +1,6 @@
 import { Window } from "happy-dom";
 import initScratchblocks from "scratchblocks/index.js";
+import cssContent from "scratchblocks/scratch3/style.css.js";
 import { readdir, mkdir, rm } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -56,12 +57,22 @@ function parseFrontmatter(content: string): {
 
 // --- Scratchblocks rendering ---
 
+// Load custom CSS overrides if present
+const customCssPath = join(import.meta.dir, "src", "custom.css");
+const customCss = await Bun.file(customCssPath).exists()
+  ? await Bun.file(customCssPath).text()
+  : "";
+
 function renderScratchblocks(code: string): string | null {
   try {
     const doc = sb.parse(code, { languages: ["en"] });
     const view = sb.newView(doc, { style: "scratch3" });
     const svg = view.render();
-    return serializer.serializeToString(svg);
+    let svgString = serializer.serializeToString(svg);
+    // Embed block color styles + custom overrides
+    // (happy-dom lacks createCDATASection so we inject directly)
+    svgString = svgString.replace("<defs>", `<defs><style>${cssContent}\n${customCss}</style>`);
+    return svgString;
   } catch {
     return null;
   }

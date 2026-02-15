@@ -1,0 +1,8 @@
+/* Custom overrides for scratchblocks SVG rendering.
+   Edit this file and run `bun run build` to apply changes.
+   These styles are appended after the default scratchblocks styles
+   inside each SVG's style tag. */
+.sb3-label {
+  font-size: 10pt;
+  font-family: sans-serif;
+}
