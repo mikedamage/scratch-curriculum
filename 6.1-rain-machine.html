@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 6.1 — Rain Machine</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 6.1 — Rain Machine</h1>
+<p>Show him: one raindrop sprite, and suddenly it&#39;s <em>raining</em>. Let the &quot;whoa&quot; moment land. Then dissect it: the original sprite is a <strong>factory</strong>. Each clone is an independent copy that runs its own script.</p>
+<h2>Demo: Rain</h2>
+<p><strong>Prep:</strong> Draw a small raindrop sprite (or use a simple circle). That&#39;s it.</p>
+<p><img src="img/6.1-1.svg" alt="6.1 example 1"></p>
+<p><strong>Blocks to point out:</strong> <code>create clone of myself</code> is under Control — it makes a copy of this sprite. <code>when I start as a clone</code> is a hat block, also under Control — it&#39;s the script that each clone runs when it&#39;s born. <code>delete this clone</code> cleans up when the raindrop reaches the bottom (without this, clones pile up and the project slows down).</p>
+<p>The original sprite stays hidden — it&#39;s the factory. Every clone starts at a random x position at the top, with random size and transparency, and falls at a random speed. Each one is independent.</p>
+<h2>Variations to Try</h2>
+<p><img src="img/6.1-2.svg" alt="6.1 example 2"></p>
+
+</body>
+</html>

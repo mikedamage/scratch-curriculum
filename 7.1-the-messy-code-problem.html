@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 7.1 — The Messy Code Problem</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 7.1 — The Messy Code Problem</h1>
+<p>Pull up one of his bigger projects. The scripts are probably getting long and tangled. Ask: &quot;If I asked you to change how the character jumps, where would you look?&quot; He&#39;ll struggle to find it.</p>
+<p>Introduce <code>My Blocks</code> (custom blocks). Refactor the jump into a <code>jump</code> block, the shooting into a <code>shoot</code> block. Suddenly the main game loop reads like plain language.</p>
+<h2>Demo: Refactored Game Loop</h2>
+<p><strong>Before</strong> (messy — the forever loop is a wall of blocks):</p>
+<p><img src="img/7.1-1.svg" alt="7.1 example 1"></p>
+<p><strong>After</strong> (clean — each block is a named action):</p>
+<p><img src="img/7.1-2.svg" alt="7.1 example 2"></p>
+<p><strong>Blocks to point out:</strong> Go to &quot;My Blocks&quot; category → &quot;Make a Block&quot; → type a name → click OK. This creates a <code>define</code> hat block and a new block you can drag into your scripts. The <code>define</code> block is where you put the <em>implementation</em> — what the block actually does. The block itself (the one you drag into <code>forever</code>) just <em>calls</em> it.</p>
+<p><strong>Analogy that&#39;ll click for him:</strong> Custom blocks are like the sub-assemblies he builds with household items. You build the wheel separately, then just attach it to the car. You don&#39;t rebuild the wheel every time.</p>
+<p><strong>Key benefit to show him:</strong> Now when he wants to change how jumping works, he goes to the <code>define jump</code> block. He doesn&#39;t have to search through a giant script. And if he wants to add jumping somewhere else (maybe an enemy jumps too), he just uses the same block.</p>
+
+</body>
+</html>

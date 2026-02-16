@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 8.1 — Design Doc (on paper)</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 8.1 — Design Doc (on paper)</h1>
+<p><strong>He designs and builds his own game from scratch.</strong> Your role shifts to consultant.</p>
+<p>Together, sketch out:</p>
+<ul>
+<li>What kind of game? (Platformer? Top-down adventure? Puzzle?)</li>
+<li>What does the player do?</li>
+<li>How do you win/lose?</li>
+<li>What sprites do you need?</li>
+<li>What variables do you need?</li>
+</ul>
+<p>This is <strong>algorithm design</strong>. He&#39;s planning the logic before touching the computer.</p>
+<h2>Prompts to Help Him Think It Through</h2>
+<p>Don&#39;t fill in the answers — ask the questions and let him work through them:</p>
+<ul>
+<li>&quot;When the player does [action], what should happen?&quot;</li>
+<li>&quot;How will the computer know when you&#39;ve won? What number or condition means &#39;you win&#39;?&quot;</li>
+<li>&quot;List every sprite you need. For each one, what does it do?&quot;</li>
+<li>&quot;What numbers does the game need to remember?&quot; (These are his variables.)</li>
+<li>&quot;What messages need to pass between sprites?&quot; (These are his broadcasts.)</li>
+</ul>
+<h2>Example: Skeleton Design Doc</h2>
+<p>If he&#39;s unsure how to start, walk through an example together (but let him pick his own game):</p>
+<pre><code>Game: Dungeon Escape
+Goal: Reach the exit of each room before time runs out
+
+Sprites:
+- Player (arrow key movement)
+- Key (collect to open door)
+- Door (opens when key is collected)
+- Enemies (move in patterns, touching = lose a life)
+- Timer display
+
+Variables:
+- lives (starts at 3)
+- has-key (0 or 1)
+- level (starts at 1)
+- time-left (counts down)
+
+Broadcasts:
+- &quot;key collected&quot; → door opens
+- &quot;door reached&quot; → next level
+- &quot;game over&quot; → game over screen
+- &quot;you win&quot; → win screen
+
+Backdrops:
+- Room 1, Room 2, Room 3, Game Over, You Win
+</code></pre>
+<p>He can draw the rooms, sketch the sprites, and map out the flow on paper. This is the hardest and most valuable part — resist the urge to jump to the computer.</p>
+
+</body>
+</html>

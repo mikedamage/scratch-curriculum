@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 6.2 — Space Invaders</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 6.2 — Space Invaders</h1>
+<p>Rebuild the space shooter, but now enemies are clones. One enemy sprite, cloning itself into a grid. Each clone moves independently. Player shoots, laser touches a clone, <em>that clone</em> deletes itself.</p>
+<p>This is a substantial project. Break it into pieces.</p>
+<h2>Step 1: Enemy Grid</h2>
+<p><img src="img/6.2-1.svg" alt="6.2 example 1"></p>
+<p><strong>Blocks to point out:</strong> The math in <code>go to</code> places each clone in a grid. Column controls x (left-right), row controls y (up-down). The <code>-140</code> and <code>120</code> are the starting position of the grid. The <code>* 40</code> is the spacing between enemies. He doesn&#39;t need to get the math perfect on the first try — tweak the numbers until the grid looks right.</p>
+<h2>Step 2: Enemy Movement</h2>
+<p>Add to the clone script:</p>
+<p><img src="img/6.2-2.svg" alt="6.2 example 2"></p>
+<p>Classic Space Invaders march: right, drop, left, drop, repeat.</p>
+<h2>Step 3: Hit Detection</h2>
+<p><img src="img/6.2-3.svg" alt="6.2 example 3"></p>
+<p>When a laser touches <em>this specific clone</em>, only that clone deletes itself. The others keep going. This is the magic of clones — each one is its own independent actor.</p>
+<h2>Step 4: Score and Game Over</h2>
+<p><img src="img/6.2-4.svg" alt="6.2 example 4"></p>
+<p>If any enemy reaches the bottom, game over.</p>
+<p><strong>Key insight:</strong> Cloning lets you create <em>many</em> from <em>one</em>. You write the behavior once, and every copy follows it. This is the seed of object-oriented thinking.</p>
+<h2>Tinker Challenge: Enemy Types</h2>
+<p>Different enemy types — some take 2 hits, some shoot back. This requires clone-local variables.</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p>Scratch doesn&#39;t have true clone-local variables, but &quot;for this sprite only&quot; variables work per-clone:</p>
+<p><img src="img/6.2-5.svg" alt="6.2 example 5"></p>
+<p>The &quot;For this sprite only&quot; option when creating the variable is the key — it means each clone has its own copy of <code>hp</code>. Without it, all clones share one <code>hp</code> and shooting one enemy would affect them all.</p>
+
+</body>
+</html>

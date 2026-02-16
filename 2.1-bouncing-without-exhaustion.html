@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 2.1 — Bouncing Without Exhaustion</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 2.1 — Bouncing Without Exhaustion</h1>
+<p>Open with a problem: &quot;Make the cat bounce back and forth across the screen forever.&quot; Let him try it with sequences first. He&#39;ll start copy-pasting <code>move 10 steps</code> blocks. After 30 seconds of this, he&#39;ll feel the pain. <em>Now</em> introduce <code>forever</code> and <code>repeat</code>. The relief of solving a tedious problem with an elegant tool is addictive.</p>
+<h2>Demo: Bouncing Ball</h2>
+<p><img src="img/2.1-1.svg" alt="2.1 example 1"></p>
+<p>That&#39;s it — three blocks inside a <code>forever</code> and the ball bounces endlessly. The <code>set rotation style</code> keeps the sprite from flipping upside down (without it, the cat goes belly-up when it bounces, which is funny but distracting).</p>
+<p><strong>Blocks to point out:</strong> <code>forever</code> is under Control — it&#39;s a loop that never stops. <code>if on edge, bounce</code> is a single block under Motion that handles all the edge detection. <code>set rotation style</code> is also under Motion — try all three options and see what they do.</p>
+<h2>Variations to try together</h2>
+<p><img src="img/2.1-2.svg" alt="2.1 example 2"></p>
+
+</body>
+</html>

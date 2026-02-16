@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 2.2 — Spirograph Machine</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 2.2 — Spirograph Machine</h1>
+<p>Introduce the <strong>pen extension</strong> (click &quot;Add Extension&quot; at bottom-left, choose &quot;Pen&quot;). Show him this script and let him run it:</p>
+<h2>Demo: Star Burst</h2>
+<p><img src="img/2.2-1.svg" alt="2.2 example 1"></p>
+<p>Then ask: &quot;What happens if you change 170 to 160? What about 144? What about 91?&quot; Let him experiment. He&#39;s doing modular arithmetic without knowing it. The visual feedback is instant and beautiful.</p>
+<h3>Cheat Sheet: Angles That Look Cool</h3>
+<table>
+<thead>
+<tr>
+<th>Angle</th>
+<th>What it draws</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>170</td>
+<td>36-pointed star burst</td>
+</tr>
+<tr>
+<td>160</td>
+<td>18-pointed star</td>
+</tr>
+<tr>
+<td>144</td>
+<td>5-pointed star (classic)</td>
+</tr>
+<tr>
+<td>135</td>
+<td>Octagon star</td>
+</tr>
+<tr>
+<td>120</td>
+<td>Triangle</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Slowly spiraling square</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Slowly spiraling square (other direction)</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Dense spirograph</td>
+</tr>
+</tbody></table>
+<h2>Demo: Color-Shifting Spirograph</h2>
+<p><img src="img/2.2-2.svg" alt="2.2 example 2"></p>
+<p><strong>Key insight:</strong> A loop with slightly different numbers produces wildly different results. <strong>Parameters matter.</strong> This is the seed of computational thinking — same structure, different inputs, different outputs.</p>
+<h2>Tinker Challenge: Spirograph Machine</h2>
+<p>Build a &quot;spirograph machine&quot; where pressing different number keys draws different patterns.</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p><img src="img/2.2-3.svg" alt="2.2 example 3"></p>
+<p>Each key = different angle + different repeat count + different colors. He can tune the numbers and build up a whole gallery.</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 1.1 — The Bossy Robot</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 1.1 — The Bossy Robot</h1>
+<p>Away from the computer: you are a robot. He writes instructions on index cards (one step per card) to make you walk to the fridge and get a snack. You follow them <em>literally</em>. If he says &quot;open the fridge&quot; before &quot;walk to the fridge,&quot; you mime opening an invisible fridge where you stand. This gets funny fast, and the lesson — <strong>order matters, computers are literal</strong> — lands through laughter.</p>
+<p>Then on Scratch: give him a sprite and a goal — &quot;make the cat walk to the edge, say &#39;hello!&#39;, then do a flip.&quot;</p>
+<h2>Demo: Walk, Talk, Flip</h2>
+<p>Build this ahead of time and let him run it, then take it apart:</p>
+<p><img src="img/1.1-1.svg" alt="1.1 example 1"></p>
+<p><strong>Blocks to point out:</strong> The <code>glide</code> block is under Motion (it moves smoothly instead of teleporting). <code>say</code> is under Looks. <code>repeat</code> and <code>wait</code> are under Control — the <code>wait</code> inside the repeat is what makes the flip visible instead of instant.</p>
+<h2>Tinker Challenge: Three-Sprite Skit</h2>
+<p>Make a 3-sprite skit where characters take turns talking. This naturally introduces the idea that timing/sequencing gets harder with multiple actors — setting up Unit 5&#39;s broadcasting.</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p><img src="img/1.1-2.svg" alt="1.1 example 2"></p>
+<p>The key insight: each sprite has its own script that starts at the same time (green flag), so he needs <code>wait</code> blocks to stagger the dialogue. If the timing is off, they&#39;ll talk over each other — which is a useful thing to let happen so he can debug it.</p>
+
+</body>
+</html>

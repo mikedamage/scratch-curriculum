@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 4.2 — Catch Game</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 4.2 — Catch Game</h1>
+<p>Build a proper <strong>falling objects game</strong>: objects fall from the sky, a basket/character moves with arrow keys, catching objects increases score, missing them costs a life. Three lives and you&#39;re out.</p>
+<p>This combines: forever loops (game loop), conditionals (touching? hit bottom?), variables (score, lives), events (arrow keys).</p>
+<h2>Demo: Fruit Catcher</h2>
+<p><strong>Prep:</strong> You need two sprites — a basket/character at the bottom, and a falling object (apple, star, whatever). Create three variables: <code>score</code>, <code>lives</code>, <code>speed</code>.</p>
+<p><strong>Basket sprite:</strong></p>
+<p><img src="img/4.2-1.svg" alt="4.2 example 1"></p>
+<p><strong>Falling object sprite:</strong></p>
+<p><img src="img/4.2-2.svg" alt="4.2 example 2"></p>
+<p><strong>Blocks to point out:</strong> <code>(0) - (speed)</code> is how you make something move down — it&#39;s a subtraction operator (green, under Operators) with 0 minus the speed variable. The <code>repeat until</code> block keeps running until its condition becomes true. <code>touching [Basket]?</code> checks if this sprite is overlapping the basket sprite.</p>
+<p><strong>This is his first &quot;real&quot; game.</strong> Let him feel that.</p>
+
+</body>
+</html>

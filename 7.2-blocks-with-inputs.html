@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 7.2 — Blocks with Inputs</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 7.2 — Blocks with Inputs</h1>
+<p>Custom blocks can take parameters. Now one block can draw a triangle, square, pentagon — anything.</p>
+<h2>Demo: Draw Polygon</h2>
+<p>Go to &quot;My Blocks&quot; → &quot;Make a Block&quot; → type &quot;draw-polygon&quot; → click &quot;Add an input&quot; → name it &quot;sides&quot; → &quot;Add an input&quot; again → name it &quot;size&quot; → OK.</p>
+<p><img src="img/7.2-1.svg" alt="7.2 example 1"></p>
+<p>Now he can call it:</p>
+<p><img src="img/7.2-2.svg" alt="7.2 example 2"></p>
+<p><strong>Blocks to point out:</strong> The inputs (<code>sides</code>, <code>size</code>) are oval-shaped — they&#39;re like variables, but they only exist inside the <code>define</code> block. When you call <code>draw-polygon (5) (60)</code>, the <code>sides</code> oval becomes 5 and <code>size</code> becomes 60 <em>for that call</em>. Next time you call it with different numbers, it draws something different.</p>
+<h2>Demo: Connecting Back to Unit 2</h2>
+<p>Rewrite the spirograph using custom blocks:</p>
+<p><img src="img/7.2-3.svg" alt="7.2 example 3"></p>
+<p>Same spirograph machine from Unit 2, but now the code is clean and the pattern is reusable. One block, three parameters, infinite designs.</p>
+<h2>Tinker Challenge: Enemy Factory Block</h2>
+<p>Build a custom <code>make-enemy (speed) (health) (color)</code> block for the space game and use it to create different enemy types cleanly.</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p><img src="img/7.2-4.svg" alt="7.2 example 4"></p>
+<p>The <code>make-enemy</code> block sets up the properties <em>before</em> creating the clone. The clone inherits whatever the sprite&#39;s variables were at the moment it was cloned. This is a slick pattern — the custom block becomes a factory with knobs.</p>
+<p><strong>Note:</strong> This only works if <code>hp</code>, <code>fall-speed</code>, etc. are &quot;For this sprite only&quot; variables (see Unit 6). Otherwise all clones share the same values and the last <code>make-enemy</code> call wins.</p>
+
+</body>
+</html>

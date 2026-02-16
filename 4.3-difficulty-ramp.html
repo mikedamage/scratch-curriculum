@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 4.3 — Difficulty Ramp</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 4.3 — Difficulty Ramp</h1>
+<p>Revisit the catch game: &quot;How do we make it get harder?&quot; Introduce the idea that variables can control game behavior.</p>
+<h2>Demo: Gradual Speed Increase</h2>
+<p>Add this as a separate script on the falling object sprite:</p>
+<p><img src="img/4.3-1.svg" alt="4.3 example 1"></p>
+<p>Now the game gets progressively faster. Every 3 seconds, the fall speed ticks up. He doesn&#39;t need to change anything else — the falling script already uses <code>(speed)</code>, so it automatically gets harder.</p>
+<p><strong>Key insight:</strong> Variables aren&#39;t just for score. They control <em>how the game behaves</em>. Speed, gravity, spawn rate — these are all just numbers you can change. This is a powerful idea.</p>
+<h2>Variations to Try</h2>
+<p><img src="img/4.3-2.svg" alt="4.3 example 2"></p>
+<h2>Tinker Challenge: Power-Ups</h2>
+<p>Add a &quot;power-up&quot; object (a different sprite or costume) that slows things down or gives bonus points.</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p>A second falling sprite (duplicate the first one, change the costume):</p>
+<p><img src="img/4.3-3.svg" alt="4.3 example 3"></p>
+<p>The power-up appears less often (<code>wait (pick random (5) to (15))</code> seconds), is worth more points, and reduces the speed variable — making everything temporarily easier. This requires another conditional inside the game loop concept and reinforces that variables are levers that control the whole game.</p>
+
+</body>
+</html>

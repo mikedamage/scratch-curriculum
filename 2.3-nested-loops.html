@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 2.3 (optional) — Nested Loops</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 2.3 (optional) — Nested Loops</h1>
+<p>If he&#39;s ready: &quot;What happens if you put a loop <em>inside</em> a loop?&quot; Let him predict, then try it.</p>
+<h2>Demo: Mandala</h2>
+<p><img src="img/2.3-1.svg" alt="2.3 example 1"></p>
+<p>The inner loop draws a star. The outer loop draws 10 of them, each rotated 36 degrees from the last (360 / 10 = 36). The result is a mandala.</p>
+<p><strong>Blocks to point out:</strong> The inner <code>repeat (36)</code> runs completely — drawing one full star — before the outer loop turns and starts the next one. This concept (nesting) recurs everywhere in programming.</p>
+<h2>Tinker Challenge: Nested Loop Art</h2>
+<p>Let him experiment with different numbers. Some starting points:</p>
+<p><img src="img/2.3-2.svg" alt="2.3 example 2"></p>
+<p>The outer repeat count times the outer turn should equal 360 for a complete rotation. That&#39;s the only &quot;rule&quot; — everything else is fair game.</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session 3.1 — The Floor Is Lava</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<h1>Session 3.1 — The Floor Is Lava</h1>
+<p>Build a simple world: a sprite, some colored platforms, and red &quot;lava.&quot; Introduce <code>if &lt;touching color?&gt; then</code> — if you touch lava, go back to start. He now has a <strong>maze game</strong>.</p>
+<p>Start with just <code>if/then</code>. Don&#39;t introduce <code>else</code> yet. One concept per session.</p>
+<h2>Demo: Lava Maze</h2>
+<p><strong>Prep:</strong> Paint a backdrop with black platforms and red lava areas (or use a simple hand-drawn one). Set the sprite to a small character.</p>
+<p><img src="img/3.1-1.svg" alt="3.1 example 1"></p>
+<p><strong>Blocks to point out:</strong> <code>if/then</code> is under Control. <code>touching color?</code> is under Sensing — click the color swatch and then use the eyedropper to pick the exact red from the backdrop. <code>key pressed?</code> is also under Sensing. The movement blocks (<code>change x by</code>, <code>change y by</code>) are under Motion.</p>
+<p><strong>Key insight to draw out:</strong> The computer is <em>constantly checking</em> a question and <em>deciding</em> what to do based on the answer. &quot;If this, then that&quot; is how all decisions work in code. The <code>forever</code> loop runs these checks over and over — without it, the check would only happen once.</p>
+<h2>Tinker Challenge: Multi-Color Hazards</h2>
+<p>Add a second color that does something different (green = speed boost, blue = teleport).</p>
+<p><strong>Hint — blocks he&#39;ll need:</strong></p>
+<p><img src="img/3.1-2.svg" alt="3.1 example 2"></p>
+<p>Each new color is another <code>if</code> block. He&#39;s building up a pattern: one condition, one response. The conditions are all checked every frame inside that <code>forever</code> loop.</p>
+
+</body>
+</html>
