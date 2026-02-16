@@ -2,7 +2,11 @@ import { Window } from "happy-dom";
 import initScratchblocks from "scratchblocks/index.js";
 import cssContent from "scratchblocks/scratch3/style.css.js";
 import { readdir, mkdir, rm } from "node:fs/promises";
-import { join } from "node:path";
+import { join, resolve, dirname } from "node:path";
+
+const SRC = resolve(join(import.meta.dir, "..", "src"));
+const BUILD = resolve(join(import.meta.dir, "..", "build", "markdown"));
+const IMG = join(BUILD, "img");
 
 // --- DOM setup for server-side scratchblocks rendering ---
 
@@ -58,7 +62,7 @@ function parseFrontmatter(content: string): {
 // --- Scratchblocks rendering ---
 
 // Load custom CSS overrides if present
-const customCssPath = join(import.meta.dir, "src", "custom.css");
+const customCssPath = join(SRC, "custom.css");
 const customCss = await Bun.file(customCssPath).exists()
   ? await Bun.file(customCssPath).text()
   : "";
@@ -127,12 +131,9 @@ function looksLikeScratchblocks(code: string): boolean {
 
 // --- Build pipeline ---
 
-const SRC = join(import.meta.dir, "src");
-const BUILD = join(import.meta.dir, "build", "markdown");
-const IMG = join(BUILD, "img");
 
 // Clean and create output dirs
-await rm(join(import.meta.dir, "build"), { recursive: true, force: true });
+await rm(dirname(BUILD), { recursive: true, force: true });
 await mkdir(IMG, { recursive: true });
 
 const files = await readdir(SRC);

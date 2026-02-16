@@ -1,10 +1,10 @@
 import { marked } from "marked";
 import { readdir, mkdir, cp } from "node:fs/promises";
-import { join } from "node:path";
+import { resolve, join, dirname } from "node:path";
 
-const MD_DIR = join(import.meta.dir, "build", "markdown");
-const HTML_DIR = join(import.meta.dir, "build", "html");
-const CSS_SRC = join(import.meta.dir, "node_modules", "github-markdown-css", "github-markdown-light.css");
+const MD_DIR = resolve(join(import.meta.dir, "..", "build", "markdown"));
+const HTML_DIR = join(dirname(MD_DIR), "html");
+const CSS_SRC = resolve(join(import.meta.dir, "..", "node_modules", "github-markdown-css", "github-markdown-light.css"));
 
 await mkdir(HTML_DIR, { recursive: true });
 
