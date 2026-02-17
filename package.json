@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "gh-pages": "^6.3.0",
     "http-server": "^14.1.1"
   },
   "peerDependencies": {
