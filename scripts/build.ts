@@ -106,7 +106,7 @@ function template(title: string, body: string): string {
   </style>
 </head>
 <body class="markdown-body">
-  ${title !== 'curriculum' ? ('<div><a href="/">&laquo; Back to Curriculum</a></div>') : ''}
+  ${title !== 'curriculum' ? ('<div><a href="index.html">&laquo; Back to Curriculum</a></div>') : ''}
   ${body}
 </body>
 </html>`;
