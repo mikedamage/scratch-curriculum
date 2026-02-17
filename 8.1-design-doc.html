@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Session 8.1 — Design Doc (on paper)</title>
+  <title>Design Doc</title>
   <link rel="stylesheet" href="github-markdown.css">
+  <link rel="stylesheet" href="scratchblocks.css">
   <style>
     body {
       box-sizing: border-box;
@@ -23,8 +24,9 @@
   </style>
 </head>
 <body class="markdown-body">
-<h1>Session 8.1 — Design Doc (on paper)</h1>
-<p><strong>He designs and builds his own game from scratch.</strong> Your role shifts to consultant.</p>
+  <div><a href="/">&laquo; Back to Curriculum</a></div>
+  <h1>Session 8.1 — Design Doc (on paper)</h1>
+<p><strong>They design and build their own game from scratch.</strong> Your role shifts to consultant.</p>
 <p>Together, sketch out:</p>
 <ul>
 <li>What kind of game? (Platformer? Top-down adventure? Puzzle?)</li>
@@ -33,19 +35,19 @@
 <li>What sprites do you need?</li>
 <li>What variables do you need?</li>
 </ul>
-<p>This is <strong>algorithm design</strong>. He&#39;s planning the logic before touching the computer.</p>
-<h2>Prompts to Help Him Think It Through</h2>
-<p>Don&#39;t fill in the answers — ask the questions and let him work through them:</p>
+<p>This is <strong>algorithm design</strong>. They're planning the logic before touching the computer.</p>
+<h2>Prompts to Help Them Think It Through</h2>
+<p>Don't fill in the answers — ask the questions and let them work through them:</p>
 <ul>
-<li>&quot;When the player does [action], what should happen?&quot;</li>
-<li>&quot;How will the computer know when you&#39;ve won? What number or condition means &#39;you win&#39;?&quot;</li>
-<li>&quot;List every sprite you need. For each one, what does it do?&quot;</li>
-<li>&quot;What numbers does the game need to remember?&quot; (These are his variables.)</li>
-<li>&quot;What messages need to pass between sprites?&quot; (These are his broadcasts.)</li>
+<li>"When the player does [action], what should happen?"</li>
+<li>"How will the computer know when you've won? What number or condition means 'you win'?"</li>
+<li>"List every sprite you need. For each one, what does it do?"</li>
+<li>"What numbers does the game need to remember?" (These are their variables.)</li>
+<li>"What messages need to pass between sprites?" (These are their broadcasts.)</li>
 </ul>
 <h2>Example: Skeleton Design Doc</h2>
-<p>If he&#39;s unsure how to start, walk through an example together (but let him pick his own game):</p>
-<pre><code>Game: Dungeon Escape
+<p>If they're unsure how to start, walk through an example together (but let them pick their own game):</p>
+<pre><code class="language-text">Game: Dungeon Escape
 Goal: Reach the exit of each room before time runs out
 
 Sprites:
@@ -62,15 +64,14 @@ Variables:
 - time-left (counts down)
 
 Broadcasts:
-- &quot;key collected&quot; → door opens
-- &quot;door reached&quot; → next level
-- &quot;game over&quot; → game over screen
-- &quot;you win&quot; → win screen
+- "key collected" → door opens
+- "door reached" → next level
+- "game over" → game over screen
+- "you win" → win screen
 
 Backdrops:
 - Room 1, Room 2, Room 3, Game Over, You Win
 </code></pre>
-<p>He can draw the rooms, sketch the sprites, and map out the flow on paper. This is the hardest and most valuable part — resist the urge to jump to the computer.</p>
-
+<p>They can draw the rooms, sketch the sprites, and map out the flow on paper. This is the hardest and most valuable part — resist the urge to jump to the computer.</p>
 </body>
 </html>
