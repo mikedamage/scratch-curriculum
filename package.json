@@ -3,10 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bun run scripts/build.ts && bun run scripts/build-html.ts"
+    "build": "bun run scripts/build.ts",
+    "serve": "http-server build"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "http-server": "^14.1.1"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -14,7 +16,15 @@
   "dependencies": {
     "github-markdown-css": "^5.9.0",
     "happy-dom": "^20.6.1",
-    "marked": "^17.0.2",
-    "scratchblocks": "^3.6.4"
+    "rehype-stringify": "^10.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "remark-stringify": "^11.0.0",
+    "scratchblocks": "^3.6.4",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.1.0",
+    "yaml": "^2.8.2"
   }
 }
