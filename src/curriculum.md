@@ -1,15 +1,19 @@
-# Scratch Curriculum for a Gifted 7-Year-Old
+# Scratch Curriculum for a Mini Engineer
 
-This is designed around how he learns: **see it working → take it apart → understand the mechanism → build his own version → push it further**. Every session ends with something playable. No session should feel like homework.
+This is a comp-sci intro curriculum for early grade school aged kids, designed around how my 7yo son learns:
+
+> **see it working → take it apart → understand the mechanism → build his own version → push it further**.
+
+Every session ends with something playable. No session should feel like homework. The only requirements are basic reading skills and the ability to do simple addition and subtraction.
 
 ---
 
 ## Guiding Principles
 
-1. **Reverse-engineer first, build second.** Start each concept by handing him a finished project and letting him poke at the code. "How do you think this works?" before "Here's how to make this."
-2. **Name the concept after he's already using it.** Let him discover that a "forever" loop makes the cat keep moving, *then* say "that's called a loop." Vocabulary follows intuition.
-3. **30-40 minute sessions max.** Quit while he's still engaged, never when he's bored. If he's on fire, let him keep going, but plan for 30.
-4. **Every session produces a toy.** Something he can show someone else or play with later.
+1. **Reverse-engineer first, build second.** Start each concept by handing your student a finished project and letting them poke at the code. "How do you think this works?" before "Here's how to make this."
+2. **Name the concept after they're already using it.** Let them discover that a "forever" loop makes the cat keep moving, *then* say "that's called a loop." Vocabulary follows intuition.
+3. **30-40 minute sessions max.** Quit while they're still engaged, never when they're bored. If they're on fire, let them keep going, but plan for 30.
+4. **Every session produces a toy.** Something they can show someone else or play with later.
 5. **"What if..." is the whole point.** Build in tinker time. The extensions aren't homework — they're provocations.
 
 ---
@@ -41,10 +45,10 @@ This is designed around how he learns: **see it working → take it apart → un
 
 ## Practical Tips
 
-**When he's stuck:** Don't explain — ask. "What do you *want* to happen? What's happening *instead*? Where could the problem be?" Debugging is the most valuable skill in programming, and it's a muscle built by struggling productively, not by being rescued.
+**When they're stuck:** Don't explain — ask. "What do you *want* to happen? What's happening *instead*? Where could the problem be?" Debugging is the most valuable skill in programming, and it's a muscle built by struggling productively, not by being rescued.
 
-**When he's bored:** Skip ahead. This curriculum is ordered by dependency, not difficulty. If he groks loops immediately, don't make him do three loop exercises. Move to conditionals. The catch game in Unit 4 will make him use loops anyway.
+**When they're bored:** Skip ahead. This curriculum is ordered by dependency, not difficulty. If they grok loops immediately, don't make them do three loop exercises. Move to conditionals. The catch game in Unit 4 will make them use loops anyway.
 
-**When he wants to go off-script:** Let him. If he decides mid-Unit 3 that he wants to build a Pokemon battle simulator, help him figure out what concepts he needs and learn them in context. Motivation beats curriculum order every time.
+**When they want to go off-script:** Let them. If they decide mid-Unit 3 that they want to build a Pokemon battle simulator, help them figure out what concepts they need and learn them in context. Motivation beats curriculum order every time.
 
-**When he wants to show you something:** Stop everything and look at it. A kid sharing their creation is a kid who identifies as a creator. Protect that at all costs.
+**When they want to show you something:** Stop everything and look at it. A kid sharing their creation is a kid who identifies as a creator. Protect that at all costs.
